@@ -2,6 +2,7 @@ package topoic_modeller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -19,8 +20,20 @@ public class GUI2 implements ActionListener {
 	private static JTextField Doc2;
 	private static JButton button;
 	private static JLabel success;
+	private static String docs;
 	
 	public static void main(String[] args) {
+		/*
+		FileProcessor fp = new FileProcessor();
+		String koj = "C:/Users/JOSEP/OneDrive/Documents/roles.txt";
+		try {
+			docs = fp.readFile(koj); //"C:/Users/JOSEP/OneDrive/Documents/roles.txt"  "C:\Users\JOSEP\OneDrive\Documents\roles.txt"
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		System.out.println(docs); 
+		*/
 		frame = new JFrame();
 		panel = new JPanel();
 		frame.setSize(400, 200);
@@ -63,6 +76,16 @@ public class GUI2 implements ActionListener {
 		String file = Doc1.getText();
 		String file2 = Doc2.getText();
 		System.out.println(file+ " " +file2);
+		
+		FileProcessor fp2 = new FileProcessor();
+		String koj = "C:/Users/JOSEP/OneDrive/Documents/roles.txt";
+		try {
+			docs = fp2.readFile(Doc1.getText()); //"C:/Users/JOSEP/OneDrive/Documents/roles.txt"  "C:\Users\JOSEP\OneDrive\Documents\roles.txt"
+		} catch (FileNotFoundException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+		System.out.println(docs);
 	}
 
 }
