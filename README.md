@@ -12,3 +12,4 @@ Initial plan
 5. GUI class - GUI
 6. Edit clean doc class - use to add additional stop words
 7. Save results class - used to save results
+The link "http://www.lextek.com/manuals/onix/stopwords1.html" does not work for me. I am using the stop word list from github "https://gist.github.com/sebleier/554280" for my assignment. 
