@@ -14,3 +14,4 @@ Initial plan
 7. The class FileClean inherits from FileProcessor.
 8. The initial plan changed during the process.
 9. The link "http://www.lextek.com/manuals/onix/stopwords1.html" does not work for me. I am using the stop word list from github "https://gist.github.com/sebleier/554280" for my assignment. 
+https://www.youtube.com/watch?v=TEvSuMctv2Y
